@@ -1,5 +1,5 @@
 // Enhanced ConsciousAgent class
-class ConsciousAgent {
+export class ConsciousAgent {
   id: number;
   perception: any; // The agent's perception of the world
   decision: any; // The agent's decision based on its perception
@@ -88,7 +88,7 @@ class ConsciousAgent {
 // }
 
 // Enhanced HyperGraphNode class
-class HyperGraphNode {
+export class HyperGraphNode {
   id: number;
   agent: ConsciousAgent;
 
@@ -99,7 +99,7 @@ class HyperGraphNode {
 }
 
 // Enhanced HyperEdge class
-class HyperEdge {
+export class HyperEdge {
   nodes: HyperGraphNode[];
 
   constructor(nodes: HyperGraphNode[]) {
@@ -144,7 +144,7 @@ class HyperEdge {
 }
 
 // Define the hypergraph
-class HyperGraph {
+export class HyperGraph {
   nodes: HyperGraphNode[] = [];
   edges: HyperEdge[] = [];
 
@@ -181,7 +181,7 @@ class HyperGraph {
 }
 
 // Function to replicate a specific scenario from Hoffman's research
-function replicateHoffmanScenario(): void {
+export function replicateHoffmanScenario(): void {
   // Example: Set up a network of agents with specific initial perceptions
   const agent1 = new ConsciousAgent(1, 0.2);
   const agent2 = new ConsciousAgent(2, 0.8);
@@ -226,7 +226,7 @@ introduceWolframDynamics();
 analyzeEmergentPhenomena();
 
 // Function to simulate a specific scenario and collect data
-function simulateScenario(initialConditions: any): any[] {
+export function simulateScenario(initialConditions: any): any[] {
   // Set up the initial conditions for the scenario
   const agents = initialConditions.agents as ConsciousAgent[];
   const nodes = agents.map(
