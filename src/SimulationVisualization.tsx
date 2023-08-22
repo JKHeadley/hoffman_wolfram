@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import * as d3 from "d3";
 import { simulateScenario, ConsciousAgent } from "./simulation";
 
+
 const initialConditions = {
   agents: [
-    new ConsciousAgent(1, 0.2),
-    new ConsciousAgent(2, 0.8),
-    new ConsciousAgent(3, 0.5),
+    new ConsciousAgent("gluon"),
+    new ConsciousAgent("quark"),
+    new ConsciousAgent("antiquark"),
   ],
 };
 
