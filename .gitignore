@@ -36,12 +36,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-#Notion_db
-/Notion_DB
-
-/docs/With Timestamps
-/docs/Without Timestamps
 /env
-/scripts/transcripts
-scripts/11_transcripts
-docs/pdfs/mbt_experiments.pdf
